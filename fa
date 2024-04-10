@@ -1,5 +1,7 @@
 #!/bin/bash
-apt-get update ; apt-get -y install sudo
+apt-get update
+apt-get -y install sudo
 mkdir nkn && cd nkn
 wget -c https://download.npool.io/npool.sh -O npool.sh && sudo chmod +x npool.sh && sudo ./npool.sh quY5PjPShaevJXLu
 sudo systemctl status npool.service
+
